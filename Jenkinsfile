@@ -20,5 +20,6 @@ pipeline {
                 sh 'docker push ylmt/flaskapp:$BUILD_NUMBER'
             }
         }
+  }
 }
 
