@@ -5,6 +5,12 @@ pipeline {
     }
     stages { 
 
+        stage('SCM Checkout') {
+            steps {  
+                 git url: 'https://github.com/muraliee/docker-flask-demo.git'
+            }
+
+
         stage('Build docker image') {
             steps {  
                 sh 'docker build -t  mohanck/practice-images:$BUILD_NUMBER .'
