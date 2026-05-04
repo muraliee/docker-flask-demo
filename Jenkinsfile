@@ -7,7 +7,7 @@ pipeline {
 
         stage('SCM Checkout') {
             steps {  
-                 git url: 'https://github.com/muraliee/docker-flask-demo.git'
+                 git branch: 'main', url: 'https://github.com/muraliee/docker-flask-demo.git'
             } }
 
 
